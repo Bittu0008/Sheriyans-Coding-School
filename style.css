@@ -16,6 +16,7 @@ body::-webkit-scrollbar {
 
 .wrapper {
     position: relative;
+    background-color: black;
 }
 
 .page1 {
@@ -96,6 +97,15 @@ body::-webkit-scrollbar {
 
 .page1 nav .right a {
     text-decoration: none;
+    color: white;
+}
+
+.page1 nav .right a:hover {
+    color: #24cfa6;
+    transition: all ease-in-out .15s;
+}
+
+.page1 nav .right a:active {
     color: white;
 }
 
@@ -183,20 +193,21 @@ body::-webkit-scrollbar {
 
 .page2 .video {
     position: absolute;
-    top: 50%;
+    top: 22%;
     left: 50%;
-    transform: translate(-50%, -200%);
+    transform: translate(-50%, -50%);
 }
 
 .page2 .video iframe {
     border-radius: 25px;
+    
 }
 
 .page2 button {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 0%);
     padding: 2vh 5vh;
     background-color: #24cfa6;
     border: none;
@@ -338,6 +349,7 @@ body::-webkit-scrollbar {
     padding: 0 5vw;
     padding-top: 60vh;
     position: relative;
+   
 }
 
 .page4 h1 {
@@ -368,4 +380,85 @@ body::-webkit-scrollbar {
     border-radius: 10px;
     font-size: 1.5vw;
     cursor: pointer;
+}
+
+.page5 {
+    height: 60vh;
+    width: 90vw;
+    background-color: black;
+    color: white;
+    padding: 10vh 1vw;
+    margin: 20vh 5vw;
+    /* margin-right: 50vw; */
+    margin-top: 20vh;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    gap: 10vw;
+}
+
+.page5 .l1, .l2, .r1, .r2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.page5 .l1 p {
+    text-wrap: nowrap;
+}
+
+.page5 .l1 p:hover {
+    color: #24cfa6;
+    transition: all ease-in-out .1s;
+    cursor: pointer;
+}
+
+.page5 .l2 p:hover {
+    color: #24cfa6;
+    transition: all ease-in-out .1s;
+    cursor: pointer;
+}
+
+.page5 .r1 p:hover {
+    color: #24cfa6;
+    transition: all ease-in-out .1s;
+    cursor: pointer;
+}
+
+.page5 .r2 p:hover {
+    color: #24cfa6;
+    transition: all ease-in-out .1s;
+    cursor: pointer;
+}
+
+.page5 .l1 img {
+    width: 2.8vw;
+}
+
+.page5 .l1 p {
+    padding: 2vh 0;
+}
+
+.page5 .l1 .icons {
+    display: flex;
+    gap: 1vw;
+}
+
+.page5 .l1 .icons i {
+    color: white;
+    font-size: 2vw;
+}
+
+.page6 {
+    height: 10vh;
+    width: 100vw;
+    color: white;
+    position: relative;
+}
+
+.page6 p {
+    position: absolute;
+    text-align: center;
+    left: 40vw;
+    top: -10vh;
 }
